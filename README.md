@@ -1,3 +1,14 @@
+# Notes
+
+This code is incomplete and functionality is severely limited. Please see the video link below for a walkthrough.
+
+https://drive.google.com/file/d/1BkE3g5eXsMeuAUDasypZ2BDw7_asYHl_/view?usp=sharing
+
+If you have any issues accessing the video, please do not hesitate to reach out.
+
+
+
+
 # Getting Started
 
 **IMPORTANT: Do not send pull requests to this repository. This is a template repository and is not used for grading. Any pull requests will be closed and ignored.**
