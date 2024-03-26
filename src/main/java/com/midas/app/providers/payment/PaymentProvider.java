@@ -12,5 +12,5 @@ public interface PaymentProvider {
    * @param details is the details of the account to be created.
    * @return Account
    */
-  Account createAccount(CreateAccount details);
+  Account createAccount(Account details);
 }

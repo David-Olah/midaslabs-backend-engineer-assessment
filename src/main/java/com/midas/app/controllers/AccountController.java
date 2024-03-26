@@ -17,6 +17,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 @RequiredArgsConstructor
 public class AccountController implements AccountsApi {
+
   private final AccountService accountService;
   private final Logger logger = LoggerFactory.getLogger(AccountController.class);
 

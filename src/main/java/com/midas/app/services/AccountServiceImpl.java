@@ -7,21 +7,19 @@ import io.temporal.client.WorkflowClient;
 import io.temporal.client.WorkflowOptions;
 import io.temporal.workflow.Workflow;
 import java.util.List;
-import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-@RequiredArgsConstructor
 public class AccountServiceImpl implements AccountService {
   private final Logger logger = Workflow.getLogger(AccountServiceImpl.class);
 
-  private final WorkflowClient workflowClient;
-
-  private final AccountRepository accountRepository;
+  @Autowired private WorkflowClient workflowClient;
+  @Autowired private AccountRepository accountRepository;
 
   /**
-   * createAccount creates a new account in the system or provider.
+   * createAccount creates a new account in the system and provider.
    *
    * @param details is the details of the account to be created.
    * @return Account
@@ -48,6 +46,7 @@ public class AccountServiceImpl implements AccountService {
    */
   @Override
   public List<Account> getAccounts() {
+
     return accountRepository.findAll();
   }
 }
